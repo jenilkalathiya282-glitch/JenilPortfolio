@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jenil Kalathiya Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="#home" class="brand">Jenil Kalathiya</a>
+
+      <nav class="desktop-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="themeToggle" class="theme-btn" aria-label="Toggle theme">☾</button>
+        <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+
+    <div id="mobileMenu" class="mobile-menu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <span class="eyebrow">Mobile App Developer</span>
+          <h1>Premium portfolio for <span>iOS Swift</span> development.</h1>
+          <p>
+            I build fast, modern, and production-ready mobile apps with clean UI,
+            strong API integration, smooth animations, and scalable architecture.
+          </p>
+
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-secondary" href="Jenil-Kalathiya-CV.pdf" download>Download CV</a>
+          </div>
+
+          <div class="mini-stats">
+            <div class="mini-card">
+              <strong>UI Focus</strong>
+              <span>Clean, modern, responsive</span>
+            </div>
+            <div class="mini-card">
+              <strong>Stack</strong>
+              <span>Swift, UIKit</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="profile-card glass">
+            <div class="ring"></div>
+            <img src="images/jenil.jpg" alt="Jenil Kalathiya" class="profile-image" />
+            <h3>Jenil Kalathiya</h3>
+            <p>iOS Developer</p>
+
+            <div class="socials">
+              <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+              <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+              <a href="mailto:your-email@example.com">Email</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-blur blur-one"></div>
+      <div class="hero-blur blur-two"></div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container two-col">
+        <div class="section-copy reveal">
+          <span class="section-tag">About Me</span>
+          <h2>Modern apps with polished user experience.</h2>
+          <p>
+            I work on iOS products with real-world features such as
+            OTP login, payments, map flows, media playback, chat, API integration,
+            reusable components, and performance optimization.
+          </p>
+        </div>
+
+        <div class="info-card glass reveal">
+          <h3>Why hire me?</h3>
+         <br>
+          <ul>
+            <li>Native iOS app development with Swift and UIKit</li>
+            <li>Strong UI implementation from design</li>
+            <li>API integration and production bug fixing</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container reveal">
+        <span class="section-tag">Skills</span>
+        <h2>Tech stack I use</h2>
+        <div class="chips">
+          <span>Swift</span>
+          <span>UIKit</span>
+          <span>REST APIs</span>
+          <span>Firebase</span>
+          <span>Google Maps</span>
+          <span>Socket.IO</span>
+          <span>AVFoundation</span>
+          <span>Git</span>
+          <span>JSON Parsing</span>
+          <span>App Optimization</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Projects</span>
+          <h2>Featured work</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <img src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=1200&q=80" alt="Project 1">
+            <div class="project-content">
+              <h3>Toretto Recovery UAE</h3>
+              <p>Live booking flow, route tracking, real-time updates, chat, and map-based experience.</p>
+              <div class="tags"><span>Swift</span><span>UIKit</span><span>Maps</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&q=80" alt="Project 2">
+            <div class="project-content">
+              <h3>FixMyCar UAE</h3>
+              <p>Vehicle service booking interface with route flow, polished screens, and API connectivity.</p>
+              <div class="tags"><span>Swift</span><span>REST API</span><span>UI</span></div>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <img src="https://images.unsplash.com/photo-1511379938547-c1f69419868d?auto=format&fit=crop&w=1200&q=80" alt="Project 3">
+            <div class="project-content">
+              <h3>Toby Music</h3>
+              <p>Music discovery UI, sticky headers, gradients, playback support, and smooth UX polish.</p>
+              <div class="tags"><span>Swift</span><span>AVFoundation</span><span>Animation</span></div>
+            </div>
+          </article>          
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-tag">Services</span>
+          <h2>What I can help with</h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card glass reveal"><h3>iOS App Development</h3><p>Native apps using Swift and UIKit.</p></div>
+          <div class="service-card glass reveal"><h3>UI Implementation</h3><p>Pixel-perfect mobile UI from Figma or design.</p></div>
+          <div class="service-card glass reveal"><h3>API Integration</h3><p>Authentication, data sync, payments, and backend flow.</p></div>
+          <div class="service-card glass reveal"><h3>Bug Fixing</h3><p>UI issues, crash fixes, and performance cleanup.</p></div>
+          <div class="service-card glass reveal"><h3>App Improvement</h3><p>Refactoring and improving existing apps.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-card glass reveal">
+        <span class="section-tag">Contact</span>
+        <h2>Let’s build your next app</h2>
+        <p>Available for freelance work, client projects, and long-term development support.</p>
+        <br>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="https://wa.me/919510528506" target="_blank">WhatsApp Me</a>
+          <a class="btn btn-secondary" href="mailto:jenilkalathiya282@gmail.com">Send Email</a>
+        </div>
+
+        <div class="contact-grid">
+          <div><strong>Email</strong><span>jenilkalathiya282@gmail.com</span></div>
+          <div><strong>Phone</strong><span>+91 951052 8506</span></div>
+          <div><strong>Location</strong><span>Surat, India</span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a href="https://wa.me/919510528506" target="_blank" class="whatsapp-float" aria-label="WhatsApp"><img src="images/whatsapp.png" class="whatsapp-image" alt="WhatsApp"></a>
+
+  <div class="cursor"></div>
+  <div class="cursor-dot"></div>
+  <script src="script.js"></script>
+</body>
+</html>
