@@ -83,28 +83,3 @@ hoverElements.forEach(el => {
     cursor.classList.remove("hover");
   });
 });
-
-/* ===== CARD MOUSE TILT EFFECT ===== */
-const cards = document.querySelectorAll(
-  ".project-card, .service-card, .mini-card, .info-card"
-);
-
-cards.forEach(card => {
-  card.addEventListener("mousemove", (e) => {
-    const rect = card.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-
-    const rotateX = -(y - centerY) / 12;
-    const rotateY = (x - centerX) / 12;
-
-    card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.04)`;
-  });
-
-  card.addEventListener("mouseleave", () => {
-    card.style.transform = "perspective(1000px) rotateX(0) rotateY(0) scale(1)";
-  });
-});
